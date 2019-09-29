@@ -74,7 +74,38 @@ int main() //Funckja main. Punkt pocz¹tkowy ka¿dego programu w C++.
 	//4. stwórz funkcjonalnoœæ pozwalaj¹c¹ na podanie argumentu
 	//5. oblicz i wypisz na konsolê wartoœæ funkcji dla podanego argumentu
 	//Rozwi¹zanie zrób w poni¿szym pustym bloku (bêdzie mi ³atwiej sprawdziæ jak bêdzie porz¹dek ;) )
+	{int parametr_a = 0;
+	int parametr_b = 0;
+	int x = 0;
+	int y = 0;
+
+	std::cout << "Podaj wartosc wspolczynnika a funkcji liniowej:" << "\n";
+	std::cin >> parametr_a;
+
+	std::cout << "Podaj wartosc wspolczynnika b funkcji liniowej:" << "\n";
+	std::cin >> parametr_b;
+
+	if (parametr_a != 0)
+
 	{
+		std::cout << "Wzor Twojej funkcji liniowej to:" << "\n";
+		std::cout << "f(x) = " << parametr_a << "x + " << parametr_b << "\n";
+
+		std::cout << "Podaj argument, dla ktorego chcesz obliczyc wartosc funkcji" << "\n";
+		std::cin >> x;
+
+		y = (parametr_a * x) + parametr_b;
+
+		std::cout << "Wartosc tej fuckji dla argumentu " << x << " wynosi: " << y << "\n";
+	}
+
+	else
+
+	{
+		std::cout << "Wspolczynnik a nie moze byc rowny 0" << "\n";
+	}
+
+	std::cout << "koniec";
 
 	}
 }
